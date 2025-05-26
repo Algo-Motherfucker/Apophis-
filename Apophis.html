@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bande Dessinée 1</title>
+    <link rel="stylesheet" href="Apophis.css"> <!-- Lien vers le CSS spécifique -->
+</head>
+<body>
+
+
+
+
+    <!-- Bannière de la bande dessinée -->
+    <header class="banner">
+        <img src="La CIté Sans Nom.png" alt="Bannière de la BD 1">
+      
+     <div class="banner">
+    <a href="Accueil.html" class="banner-home">Accueil</a>
+    <div class="banner-overlay">
+        <h1>Apophis</h1>
+    </div>
+</div>
+
+     <nav>
+         <ul>
+             <li><a href="Accueil.html">Accueil</a></li>
+             <li><a href="Bibliothèque.html">Bibliothèque</a></li>
+             <li><a href="a-propos.html">À Propos</a></li>
+             <li><a href="contact.html">Contact</a></li>
+         </ul>
+     </nav>
+    
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+        <section class="intro">
+            <h1> Apophis </h1>
+            <p>
+                Accitia, Tanaka et Oroshi sont trois orphelins à présent adultes. 
+                Du haut de leur vingtaine, ils travaillent dans un salon de thé qui leur a 
+                offert la vie dont le père défunt des deux frères du trio les a privé en perdant la sienne...
+
+                Mais nos trois jeunes gens sont loins de se douter que la raison du trépas de
+                leur tuteur légal, lui-même ex-mafieux et trafiquant ayant retourné le pays plusieurs fois, 
+                trouve ses origines dans quelque chose qu'ils n'auraient jamais pu imaginer, 
+                excepté peut-être l'un d'eux...
+            </p>
+        </section>
+
+               <!-- Menu déroulant pour choisir le tome -->
+        <div class="tome-selector">
+            <h2>Choisissez un tome :</h2>
+            <select id="tome-select">
+                <option value="" selected disabled>-- Sélectionnez un tome --</option>
+                <option value="tome1.html">Tome 1</option>
+                <option value="tome2.html">Tome 2</option>
+                <option value="tome3.html">Tome 3</option>
+                <option value="tome4.html">Tome 4</option>
+                <option value="tome5.html">Tome 5</option>
+                <option value="tome6.html">Tome 6</option>
+                <option value="tome7.html">Tome 7</option>
+            </select>
+        </div>
+
+    </main>
+
+    <!-- Script pour rediriger vers la page du tome sélectionné -->
+    <script>
+        document.getElementById("tome-select").addEventListener("change", function() {
+            let selectedValue = this.value;
+            if (selectedValue) {
+                window.location.href = selectedValue; // Redirection vers la page choisie
+            }
+        });
+    </script>
+
+        <!-- Menu de sélection du chapitre ou du tome -->
+        <nav class="chapter-menu">
+            <h2>Choisissez votre chapitre :</h2>
+            <ul>
+                <li><a href="Chapitre 1.html">Chapitre 1</a></li>
+                <li><a href="Chapitre 2.html">Chapitre 2</a></li>
+                <li><a href="Chapitre 3.html">Chapitre 3</a></li>
+                <li><a href="Tome 1.html">Tome 1</a></li>
+                <li><a href="Tome 2.html">Tome 2</a></li>
+                <li><a href="../Accueil.html" class="banner-home">Accueil</a></li>
+                
+            </ul>
+        </nav>
+    </main>
+
+   
+
+</body>
+</html>
